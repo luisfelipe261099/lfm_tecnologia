@@ -8,8 +8,8 @@ const Hero = () => {
         <section className="relative min-h-[100vh] flex items-center justify-center pt-24 md:pt-20 overflow-hidden bg-black">
             {/* Background Effects */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute top-1/4 left-1/4 w-[280px] md:w-[500px] h-[280px] md:h-[500px] bg-red-600/10 blur-[80px] md:blur-[120px] rounded-full"></div>
-                <div className="absolute bottom-1/4 right-1/4 w-[320px] md:w-[600px] h-[320px] md:h-[600px] bg-red-900/10 blur-[100px] md:blur-[150px] rounded-full"></div>
+                <div className="absolute top-1/4 left-1/4 w-[280px] md:w-[500px] h-[280px] md:h-[500px] bg-red-600/10 blur-[60px] md:blur-[100px] rounded-full"></div>
+                <div className="absolute bottom-1/4 right-1/4 w-[320px] md:w-[600px] h-[320px] md:h-[600px] bg-red-900/10 blur-[80px] md:blur-[120px] rounded-full"></div>
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none tech-grid" />
             </div>
 

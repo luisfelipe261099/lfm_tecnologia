@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
+import Image from 'next/image';
 
 const projects = [
     {
@@ -52,10 +53,13 @@ const Portfolio = () => {
                             transition={{ delay: index * 0.1 }}
                             className="group relative h-[400px] md:h-[500px] bg-neutral-900 overflow-hidden mx-auto md:mx-0 w-full rounded-2xl md:rounded-none"
                         >
-                            <img
+                            <Image
                                 src={project.image}
                                 alt={project.title}
-                                className="w-full h-full object-cover opacity-60 group-hover:opacity-40 group-hover:scale-110 transition-all duration-700 ease-out"
+                                fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                className="object-cover opacity-60 group-hover:opacity-40 group-hover:scale-110 transition-all duration-700 ease-out"
+                                priority={index === 0}
                             />
 
                             <div className="absolute inset-0 p-10 flex flex-col justify-between">
