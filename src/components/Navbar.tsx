@@ -58,7 +58,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden text-white p-2" onClick={() => setIsOpen(!isOpen)}>
+        <button className="md:hidden text-white p-2 relative z-50" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
@@ -71,14 +71,14 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="md:hidden fixed inset-0 w-full h-screen bg-black/95 z-40 flex flex-col items-center justify-center gap-10"
+            className="fixed inset-0 w-full h-screen bg-black/95 backdrop-blur-xl z-40 flex flex-col items-center justify-center gap-10 md:hidden"
           >
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="text-3xl font-bold font-mono uppercase tracking-[0.2em] hover:text-primary transition-colors"
+                className="text-3xl font-bold font-mono uppercase tracking-[0.2em] hover:text-primary transition-colors text-center"
               >
                 {link.name}
               </Link>

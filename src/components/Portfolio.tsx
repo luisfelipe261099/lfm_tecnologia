@@ -42,7 +42,7 @@ const Portfolio = () => {
                     </button>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
                     {projects.map((project, index) => (
                         <motion.div
                             key={index}
@@ -50,7 +50,7 @@ const Portfolio = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="group relative h-[500px] bg-neutral-900 overflow-hidden"
+                            className="group relative h-[400px] md:h-[500px] bg-neutral-900 overflow-hidden mx-auto md:mx-0 w-full rounded-2xl md:rounded-none"
                         >
                             <img
                                 src={project.image}

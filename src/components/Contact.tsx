@@ -28,7 +28,7 @@ const Contact = () => {
                             <ContactInfo icon={<Mail size={20} />} label="E-mail Tech" value="contato@lfmtecnologia.com" />
 
                             <div className="flex gap-6 pt-10">
-                                <SocialIcon icon={<Instagram size={20} />} href="https://instagram.com/lfm_t.i" />
+                                <SocialIcon icon={<Instagram size={20} />} href="https://www.instagram.com/lfm_t.i?igsh=Z2EybDQ3ajVienZh" />
                                 <SocialIcon icon={<MessageCircle size={20} />} href="#" />
                                 <SocialIcon icon={<Github size={20} />} href="#" />
                             </div>
@@ -39,10 +39,10 @@ const Contact = () => {
                         initial={{ opacity: 0, scale: 0.98 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="p-12 bg-white/[0.02] border border-white/5 relative"
+                        className="p-8 md:p-12 bg-white/[0.02] border border-white/5 relative rounded-2xl md:rounded-none"
                     >
-                        <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <form className="space-y-6 md:space-y-8" onSubmit={(e) => e.preventDefault()}>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                                 <InputField label="Nome" placeholder="Seu Nome" />
                                 <InputField label="Empresa" placeholder="Sua Empresa" />
                             </div>
@@ -58,7 +58,7 @@ const Contact = () => {
 
                             <button
                                 type="submit"
-                                className="group w-full py-6 bg-primary text-white font-bold font-mono uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all flex items-center justify-center gap-4 glow-shadow"
+                                className="group w-full py-5 md:py-6 bg-primary text-white font-bold font-mono uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all flex items-center justify-center gap-4 glow-shadow"
                             >
                                 DEPLOY MESSAGE <Send size={18} className="group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform" />
                             </button>

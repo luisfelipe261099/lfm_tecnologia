@@ -5,11 +5,11 @@ import { ArrowRight, Code, Shield, Smartphone, ChevronDown } from 'lucide-react'
 
 const Hero = () => {
     return (
-        <section className="relative min-h-[100vh] flex items-center justify-center pt-20 overflow-hidden bg-black">
+        <section className="relative min-h-[100vh] flex items-center justify-center pt-24 md:pt-20 overflow-hidden bg-black">
             {/* Background Effects */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-red-600/10 blur-[120px] rounded-full"></div>
-                <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-red-900/10 blur-[150px] rounded-full"></div>
+                <div className="absolute top-1/4 left-1/4 w-[280px] md:w-[500px] h-[280px] md:h-[500px] bg-red-600/10 blur-[80px] md:blur-[120px] rounded-full"></div>
+                <div className="absolute bottom-1/4 right-1/4 w-[320px] md:w-[600px] h-[320px] md:h-[600px] bg-red-900/10 blur-[100px] md:blur-[150px] rounded-full"></div>
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none tech-grid" />
             </div>
 
@@ -26,12 +26,12 @@ const Hero = () => {
                         </span>
                     </div>
 
-                    <h1 className="text-5xl md:text-8xl font-black mb-8 leading-[1.1] font-mono tracking-tighter">
+                    <h1 className="text-4xl sm:text-5xl md:text-8xl font-black mb-8 leading-[1.1] font-mono tracking-tighter">
                         PROJETANDO O <br />
                         <span className="text-gradient drop-shadow-2xl">FUTURO TECH</span>
                     </h1>
 
-                    <p className="max-w-2xl mx-auto text-lg md:text-xl text-muted/80 mb-12 font-sans font-light leading-relaxed">
+                    <p className="max-w-2xl mx-auto text-base md:text-xl text-muted/80 mb-10 md:mb-12 font-sans font-light leading-relaxed">
                         Desenvolvemos sites de alto impacto, sistemas inteligentes e
                         ecossistemas digitais que elevam sua marca ao patamar da elite tecnológica.
                     </p>

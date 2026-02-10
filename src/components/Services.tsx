@@ -61,7 +61,7 @@ const Services = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-l border-t border-white/5">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-white/5">
                     {services.map((service, index) => (
                         <motion.div
                             key={index}
@@ -69,7 +69,7 @@ const Services = () => {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="group p-12 border-r border-b border-white/5 hover:bg-red-600/[0.02] transition-colors relative overflow-hidden"
+                            className="group p-8 md:p-12 border-b md:border-r border-white/5 hover:bg-red-600/[0.02] transition-colors relative overflow-hidden md:border-l-0 border-l border-r-0 md:border-r"
                         >
                             <div className="flex justify-between items-start mb-12">
                                 <div className="p-4 bg-white/5 text-primary rounded-none group-hover:bg-primary group-hover:text-white transition-all duration-300">
