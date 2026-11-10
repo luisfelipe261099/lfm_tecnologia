@@ -12,11 +12,11 @@ const ProjectCard = ({ project, index, featured = false }: { project: Project; i
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: index * 0.1 }}
-        className={featured ? 'md:col-span-2 lg:col-span-3' : ''}
+        className={featured ? 'md:col-span-2 lg:col-span-3' : 'h-full'}
     >
         <Link
             href={`/projetos/${project.slug}`}
-            className={`group grid ${featured ? 'lg:grid-cols-5' : ''} bg-white/[0.02] border border-white/5 hover:border-primary/60 transition-colors duration-500 overflow-hidden rounded-2xl md:rounded-none`}
+            className={`group grid h-full ${featured ? 'lg:grid-cols-5' : 'grid-rows-[auto_1fr]'} bg-white/[0.02] border border-white/5 hover:border-primary/60 transition-colors duration-500 overflow-hidden rounded-2xl md:rounded-none`}
         >
             <div className={`relative overflow-hidden bg-neutral-900 aspect-[16/10] ${featured ? 'lg:col-span-3' : ''}`}>
                 <Image

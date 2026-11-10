@@ -54,6 +54,36 @@ export const projects: Project[] = [
             { src: '/projetos/studio-pilari/m-menu-v2.webp', caption: 'Menu do sistema', mobile: true },
         ],
     },
+    {
+        slug: 'erp-faciencia',
+        title: 'ERP FaCiência',
+        category: 'ERP Acadêmico & Financeiro',
+        year: '2026',
+        summary:
+            'Sistema de gestão completo de uma faculdade: secretaria acadêmica, financeiro, certificados, polos parceiros e portal do aluno em uma só plataforma.',
+        description:
+            'O ERP da Faculdade FaCiência centraliza a operação da instituição de ponta a ponta. A secretaria cuida de alunos, cursos, turmas, matrículas, notas e diário de classe; o financeiro controla contratos, cobranças e aprovações; e a direção acompanha os indicadores em dashboards. Os polos parceiros têm portal próprio para matricular alunos por link, solicitar documentos e acompanhar créditos, enquanto certificados e contratos são emitidos e assinados eletronicamente dentro do próprio sistema.',
+        highlights: [
+            'Secretaria acadêmica: alunos, cursos, turmas, disciplinas e matrículas',
+            'Dashboard com visão geral de matrículas por status e nível',
+            'Financeiro com contratos, parcelas, cobranças e aprovações',
+            'Emissão de certificados e históricos com numeração contínua',
+            'Contratos e documentos com assinatura eletrônica (padrão ICP-Brasil)',
+            'Portal dos polos parceiros com cadastro de alunos por link',
+            'Notas, faltas e diário de classe',
+            'Perfis de acesso por área: diretoria, secretaria, financeiro e polos',
+        ],
+        stack: ['React', 'TypeScript', 'NestJS', 'MySQL', 'Google Cloud', 'Firebase'],
+        cover: '/projetos/erp-faciencia/capa.webp',
+        shots: [
+            { src: '/projetos/erp-faciencia/m-dashboard.webp', caption: 'Dashboard da secretaria', mobile: true },
+            { src: '/projetos/erp-faciencia/m-menu.webp', caption: 'Menu por área', mobile: true },
+            { src: '/projetos/erp-faciencia/m-alunos.webp', caption: 'Gestão de alunos', mobile: true },
+            { src: '/projetos/erp-faciencia/m-novo-aluno.webp', caption: 'Cadastro de aluno (modo escuro)', mobile: true },
+            { src: '/projetos/erp-faciencia/m-cursos.webp', caption: 'Cursos', mobile: true },
+            { src: '/projetos/erp-faciencia/m-login.webp', caption: 'Login', mobile: true },
+        ],
+    },
 ];
 
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug);

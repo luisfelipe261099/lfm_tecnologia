@@ -25,9 +25,9 @@ export default function ProjetosPage() {
                         Sites, sistemas e aplicações que já estão no ar, resolvendo problemas reais dos nossos clientes.
                     </p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
                         {projects.map((project, i) => (
-                            <ProjectCard key={project.slug} project={project} index={i} featured={projects.length === 1 || i === 0} />
+                            <ProjectCard key={project.slug} project={project} index={i} featured={projects.length === 1} />
                         ))}
                     </div>
                 </div>

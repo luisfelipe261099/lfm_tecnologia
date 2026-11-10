@@ -27,7 +27,7 @@ const Portfolio = () => {
                     </Link>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+                <div className={`grid grid-cols-1 md:grid-cols-2 ${featured.length >= 3 ? 'lg:grid-cols-3' : ''} gap-6 md:gap-10`}>
                     {featured.map((project, i) => (
                         <ProjectCard key={project.slug} project={project} index={i} featured={featured.length === 1} />
                     ))}
