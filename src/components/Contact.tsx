@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, MessageCircle, Github, Instagram } from 'lucide-react';
+import { PHONE_DISPLAY, WHATSAPP_URL } from '@/lib/contact';
 
 const Contact = () => {
     return (
@@ -24,12 +25,14 @@ const Contact = () => {
                         </p>
 
                         <div className="space-y-10">
-                            <ContactInfo icon={<Phone size={20} />} label="Fale Agora" value="(41) 99508-3426" />
+                            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="block">
+                                <ContactInfo icon={<Phone size={20} />} label="Fale Agora" value={PHONE_DISPLAY} />
+                            </a>
                             <ContactInfo icon={<Mail size={20} />} label="E-mail Tech" value="contato@lfmtecnologia.com" />
 
                             <div className="flex gap-6 pt-10">
                                 <SocialIcon icon={<Instagram size={20} />} href="https://www.instagram.com/lfm_t.i?igsh=Z2EybDQ3ajVienZh" />
-                                <SocialIcon icon={<MessageCircle size={20} />} href="#" />
+                                <SocialIcon icon={<MessageCircle size={20} />} href={WHATSAPP_URL} />
                                 <SocialIcon icon={<Github size={20} />} href="#" />
                             </div>
                         </div>
@@ -100,6 +103,7 @@ const ContactInfo = ({ icon, label, value }: { icon: any, label: string, value: 
 const SocialIcon = ({ icon, href }: { icon: any, href: string }) => (
     <a
         href={href}
+        {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
         className="w-14 h-14 flex items-center justify-center border border-white/5 hover:border-primary hover:text-primary transition-all duration-300"
     >
         {icon}
