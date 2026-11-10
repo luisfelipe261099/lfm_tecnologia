@@ -84,6 +84,36 @@ export const projects: Project[] = [
             { src: '/projetos/erp-faciencia/m-login.webp', caption: 'Login', mobile: true },
         ],
     },
+    {
+        slug: 'bryan-wesley-barbearia',
+        title: 'Bryan Wesley Barbearia',
+        category: 'App de Agendamento & Gestão',
+        year: '2026',
+        summary:
+            'App da barbearia com agendamento online 24h, Clube VIP por assinatura, painel do barbeiro e gestão completa da unidade, com confirmações pelo WhatsApp.',
+        description:
+            'Criamos para a Bryan Wesley Barbearia um app que funciona para os dois lados do balcão. O cliente agenda em segundos, sem cadastro e sem senha, ou entra no Clube VIP e paga uma mensalidade para manter o visual o mês inteiro. A equipe tem o seu painel: cada barbeiro acompanha a fila do dia, a comissão e a meta, e faz o check-in do cliente pelo QR Code. Já a administração enxerga tudo em tempo real — faturamento, ocupação, agenda, equipe, catálogo, clientes e relatórios — enquanto o WhatsApp da barbearia confirma e lembra os horários automaticamente.',
+        highlights: [
+            'Agendamento online 24h sem cadastro, só com nome e WhatsApp',
+            'Clube VIP com planos por assinatura mensal',
+            'Dashboard em tempo real: faturamento, ocupação e comissões',
+            'Painel do barbeiro com fila do dia, comissão e meta do mês',
+            'Check-in do cliente por QR Code ou código de 6 letras',
+            'Confirmação e lembrete de horário automáticos pelo WhatsApp',
+            'Avisos no celular da equipe para horário novo, cancelado ou remarcado',
+            'Gestão de clientes com histórico, plano e horário fixo',
+        ],
+        stack: ['App web (PWA)', 'Integração WhatsApp', 'Notificações push', 'QR Code'],
+        cover: '/projetos/bryan-wesley-barbearia/capa.webp',
+        shots: [
+            { src: '/projetos/bryan-wesley-barbearia/m-site.webp', caption: 'Página inicial', mobile: true },
+            { src: '/projetos/bryan-wesley-barbearia/m-agendar.webp', caption: 'Agendamento rápido', mobile: true },
+            { src: '/projetos/bryan-wesley-barbearia/m-dashboard.webp', caption: 'Dashboard geral', mobile: true },
+            { src: '/projetos/bryan-wesley-barbearia/m-barbeiro.webp', caption: 'Painel do barbeiro', mobile: true },
+            { src: '/projetos/bryan-wesley-barbearia/m-clientes.webp', caption: 'Clientes', mobile: true },
+            { src: '/projetos/bryan-wesley-barbearia/m-mensagens.webp', caption: 'Mensagens e avisos', mobile: true },
+        ],
+    },
 ];
 
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug);
