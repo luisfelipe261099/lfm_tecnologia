@@ -1,6 +1,7 @@
 export type ProjectShot = {
     src: string;
     caption: string;
+    mobile?: boolean;
 };
 
 export type Project = {
@@ -34,16 +35,23 @@ export const projects: Project[] = [
             'Cadastro de alunos com frequência e situação financeira',
             'Financeiro com fluxo de caixa, custos fixos e cobrança via PIX',
             'Áreas separadas para administração, professoras e alunos (PWA)',
+            'Biblioteca de exercícios com vídeo para prescrever aos alunos',
         ],
         stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'MySQL / TiDB', 'Mercado Pago'],
         url: 'https://studiopilari.vercel.app',
-        cover: '/projetos/studio-pilari/site.webp',
+        cover: '/projetos/studio-pilari/site-v2.webp',
         shots: [
-            { src: '/projetos/studio-pilari/site.webp', caption: 'Site institucional' },
-            { src: '/projetos/studio-pilari/dashboard.webp', caption: 'Dashboard da proprietária' },
-            { src: '/projetos/studio-pilari/agenda.webp', caption: 'Agenda semanal de aulas' },
-            { src: '/projetos/studio-pilari/alunos.webp', caption: 'Gestão de alunos' },
-            { src: '/projetos/studio-pilari/financeiro.webp', caption: 'Controle financeiro' },
+            { src: '/projetos/studio-pilari/site-v2.webp', caption: 'Site institucional' },
+            { src: '/projetos/studio-pilari/dashboard-v2.webp', caption: 'Dashboard da proprietária' },
+            { src: '/projetos/studio-pilari/agenda-v2.webp', caption: 'Agenda semanal de aulas' },
+            { src: '/projetos/studio-pilari/alunos-v2.webp', caption: 'Gestão de alunos' },
+            { src: '/projetos/studio-pilari/financeiro-v2.webp', caption: 'Controle financeiro' },
+            { src: '/projetos/studio-pilari/m-site-v2.webp', caption: 'Site no celular', mobile: true },
+            { src: '/projetos/studio-pilari/m-dashboard-v2.webp', caption: 'Dashboard (modo escuro)', mobile: true },
+            { src: '/projetos/studio-pilari/m-agenda-v2.webp', caption: 'Agenda', mobile: true },
+            { src: '/projetos/studio-pilari/m-alunos-v2.webp', caption: 'Alunos', mobile: true },
+            { src: '/projetos/studio-pilari/m-exercicios-v2.webp', caption: 'Biblioteca de exercícios', mobile: true },
+            { src: '/projetos/studio-pilari/m-menu-v2.webp', caption: 'Menu do sistema', mobile: true },
         ],
     },
 ];
