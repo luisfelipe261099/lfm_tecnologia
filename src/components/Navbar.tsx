@@ -18,10 +18,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Início', href: '#' },
-    { name: 'Serviços', href: '#servicos' },
-    { name: 'Sobre', href: '#sobre' },
-    { name: 'Contato', href: '#contato' },
+    { name: 'Início', href: '/' },
+    { name: 'Serviços', href: '/#servicos' },
+    { name: 'Projetos', href: '/projetos' },
+    { name: 'Sobre', href: '/#sobre' },
+    { name: 'Contato', href: '/#contato' },
   ];
 
   return (
@@ -50,7 +51,7 @@ const Navbar = () => {
             </Link>
           ))}
           <Link
-            href="#contato"
+            href="/#contato"
             className="px-6 py-2 bg-primary text-white text-sm font-bold font-mono uppercase tracking-widest rounded-none hover:bg-red-700 transition-all glow-shadow"
           >
             Fale Conosco
@@ -84,7 +85,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              href="#contato"
+              href="/#contato"
               onClick={() => setIsOpen(false)}
               className="px-10 py-4 bg-primary text-white font-bold font-mono uppercase tracking-widest glow-shadow"
             >

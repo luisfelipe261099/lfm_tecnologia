@@ -26,9 +26,10 @@ const Footer = () => {
                         <FooterColumn
                             title="Links"
                             links={[
-                                { name: 'Início', href: '#' },
-                                { name: 'Serviços', href: '#servicos' },
-                                { name: 'Sobre', href: '#sobre' },
+                                { name: 'Início', href: '/' },
+                                { name: 'Serviços', href: '/#servicos' },
+                                { name: 'Projetos', href: '/projetos' },
+                                { name: 'Sobre', href: '/#sobre' },
                             ]}
                         />
                         <FooterColumn

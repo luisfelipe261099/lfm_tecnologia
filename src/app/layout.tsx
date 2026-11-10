@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Orbitron } from "next/font/google";
 import "./globals.css";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="pt-br" className="scroll-smooth">
       <body className={`${jakarta.variable} ${orbitron.variable} font-sans antialiased bg-background text-foreground`}>
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );
